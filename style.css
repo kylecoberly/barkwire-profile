@@ -73,13 +73,17 @@ h2 {
 }
 
 .pictures .featured-image {
-    max-width: 100%;
+    width: 30rem;
 }
 
 .dog-details {
     flex: 1;
     padding-left: 1rem;
     background-color: #fff;
+}
+
+.dog-details p {
+    max-width: 35rem;
 }
 
 @media (max-width: 875px) {
@@ -122,6 +126,7 @@ h2 {
     display: flex;
     flex-flow: row wrap;
     background-color: #fff;
+    justify-content: space-between;
 }
 
 .comments h2 {
@@ -155,10 +160,10 @@ blockquote::after {
     display: flex;
     flex-flow: column nowrap;
     flex: 1;
+    max-width: 30rem;
 }
 
 .comment-input textarea {
-    width: 100%;
     height: 6rem;
     padding: 0.5rem;
     margin: 2rem 0 0 0;
