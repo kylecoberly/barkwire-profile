@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700');
+
+/* Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+textarea {
+    resize: none;
+    display: block;
+}
+
+body, ul, h2, button, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+/* App Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.profile {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.pictures {
+    max-width: 600px;
+}
+
+.pictures ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pictures li {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    justify-content: center;
+    align-items: center;
+}
+
+.pictures .featured-image {
+    max-width: 100%;
+}
+
+.dog-details {
+    flex: 1;
+    padding-left: 1rem;
+    background-color: #fff;
+}
+
+@media (max-width: 875px) {
+    .dog-details {
+        padding-left: 0;
+    }
+}
+
+.bones {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bones li {
+    display: inline-block;
+}
+.bones img {
+    width: 25px;
+}
+
+.themes li {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #999;
+}
+.themes .theme-1 {
+    background-color: hsl(0, 20%, 50%);
+}
+.themes .theme-2 {
+    background-color: hsl(240, 20%, 50%);
+}
+.themes .theme-3 {
+    background-color: hsl(120, 20%, 50%);
+}
+
+.comments {
+    padding: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #fff;
+}
+
+.comments h2 {
+    display: none;
+}
+
+.last-comment {
+    max-width: 600px;
+}
+
+.last-comment p {
+    color: #aaa;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin: 0 0 0 2rem;
+    color: #333;
+    padding: 1rem;
+}
+blockquote::before {
+    content: "“";
+}
+blockquote::after {
+    content: "”";
+}
+
+.comment-input {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+}
+
+.comment-input textarea {
+    width: 100%;
+    height: 6rem;
+    padding: 0.5rem;
+    margin: 2rem 0 0 0;
+}
+
+.comment-input button {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: hsl(300, 30%, 50%);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 150px;
+}
