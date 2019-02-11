@@ -8,7 +8,6 @@ document.querySelector(".theme-2").addEventListener("click", function(){
     document.querySelector("body").style.backgroundColor = color;
 });
 document.querySelector(".theme-3").addEventListener("click", function(){
-    changeColor("hsl(120, 30%, 50%)");
     const color = "hsl(120, 30%, 50%)";
     document.querySelector("body").style.backgroundColor = color;
     document.querySelector("body").style.backgroundColor = color;
